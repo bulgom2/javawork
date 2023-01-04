@@ -18,6 +18,8 @@ public class bj1000_ApB {
 		System.out.println(a / b);
 		System.out.println(a % b);
 		
+		scan.close();
+		
 	}
 
 }
