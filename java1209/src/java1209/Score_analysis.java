@@ -11,6 +11,9 @@ public class Score_analysis {
 		int flag;
 		int numStudent = 0;
 		int[] scores=null;
+		int hscore = 0;
+		int total = 0;
+		double avg = 0;
 		
 		Scanner scan = new Scanner(System.in);
 		do {
@@ -33,14 +36,27 @@ public class Score_analysis {
 				}
 				break;
 			case 3:
-				
+				for (int i=0; i<numStudent; i++) {
+					System.out.println("scores["+i+"]> " + scores[i]);
+				}
 				break;
 			case 4:
-				
+				for (int i=0; i<numStudent; i++) {
+					total += scores[i];
+					for (int j=0; j<numStudent; j++) {
+						if (scores[i] > scores[j]) {
+							hscore = scores[i];
+						}
+					}
+				}
+				System.out.println("최고점수: " + hscore);
+				avg = (double) total / numStudent;
+				System.out.printf("평균점수: %.1f \n", avg);
 				break;
 			default:
 			}
-		}while(flag!=5);
+		} while(flag!=5);
+		System.out.println("프로그램 종료");
 		
 		scan.close();
 
