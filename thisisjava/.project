@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>thisisjava</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>lib/ojdbc5.jar</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/ojdbc5.jar</locationURI>
+		</link>
+		<link>
+			<name>lib/ojdbc6_g.jar</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/ojdbc6_g.jar</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
